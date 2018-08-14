@@ -15,5 +15,5 @@ def run(raw):
         return "잔액은 " + str(change) + "원 입니다"
     else:
         coin = params[0]
-        change = int(coin)
+        change += int(coin)
         return coin +"원을 넣었습니다"
