@@ -18,5 +18,13 @@ def run(raw):
         change += int(coin)
         return coin + "원을 넣었습니다"
 
+    elif cmd == "음료":
+        beverage = "커피"
+        change -= int(150)
+        if change >= 150:
+            return "커피가 나왔습니다."
+        elif change < 150:
+            return "잔액이 부족합니다."
+
     else :
         return "알 수 없는 명령입니다."

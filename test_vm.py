@@ -18,4 +18,8 @@ def test_unknown_message():
     init()
     assert "알 수 없는 명령입니다." == run("치즈케이크")
 
-    
+def get_coffee():
+    init()
+    run("동전 200")
+    assert "잔액은 50원입니다" == run("잔액")
+    assert "커피가 나왔습니다." == run("음료 커피")
