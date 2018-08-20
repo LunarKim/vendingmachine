@@ -1,10 +1,11 @@
+
+class VendingMachine:
+    
 change = 0
 
 def init():
     global change
     change = 0
-
-
 
 
 def run(raw):
